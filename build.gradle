@@ -1,0 +1,23 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+jar {
+	baseName = 'biblioteca'
+	version = '0.0.1-SNAPSHOT'
+}
+
+sourceCompatibility = 1.8
+
+repositories {
+	mavenCentral()
+}
+
+
+dependencies {
+	  compile 'log4j:log4j:1.2.17'
+	  compile 'com.h2database:h2:1.4.194'	
+	  compile 'org.hibernate:hibernate-core:5.2.9.Final'	
+	      
+	  testCompile 'junit:junit:4.12'
+	  testCompile 'org.mockito:mockito-all:1.10.19'
+}
